@@ -8,17 +8,11 @@ public class RestaurantTest {
     private Restaurant restaurant;
     @Before
     public void setUp() throws Exception {
-        this.restaurant = new Restaurant();
-    }
-
-//    @Test
-    public void testGetMenuList() throws Exception {
-
+        restaurant = new Restaurant();
     }
 
     @Test
     public void testAddMenu() throws Exception {
         restaurant.addMenu(new Menu());
-        System.out.println(restaurant.getMenuList().size());
     }
 }
